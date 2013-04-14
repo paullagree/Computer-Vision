@@ -1,0 +1,13 @@
+
+%%
+
+%Exo 2
+
+[X, labs, w, h] = LoadData('DData/');
+
+w = PerceptronLearning(X,labs,1);
+
+[X1, labs1] = LoadData2('DData/');
+%%
+
+[tp, tn, fp, fn] = TestHyperplane(X1, labs1, 1, w);
